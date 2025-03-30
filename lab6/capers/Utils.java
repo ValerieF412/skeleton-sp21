@@ -1,14 +1,6 @@
 package capers;
 
-import java.io.BufferedOutputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FilenameFilter;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.Serializable;
+import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.charset.StandardCharsets;
@@ -125,8 +117,6 @@ class Utils {
             throw error("Internal error serializing commit.");
         }
     }
-
-
 
     /* MESSAGES AND ERROR REPORTING */
 
